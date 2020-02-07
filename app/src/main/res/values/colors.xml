@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#64A8DD</color>
+    <color name="colorPrimaryDark">#4C9DDD</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorbtnRoles">#1D91E9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="secundario">#FFFFFF</color>
+    <color name="colorSelRol">#4C9DDD</color>
+    <color name="colorSelRol2">#E52F4B</color>
+
+
+
+
+
+</resources>

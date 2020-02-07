@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".RegistraFarmaciaActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cFarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_elegir_rol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_horizontal"
+                android:text="REGISTRAR FARMACIA"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/regFarmFoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/userphoto"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/btn_selec_imagen_farmacia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:text="Seleccione una foto"
+                app:layout_constraintEnd_toEndOf="@+id/regFarmFoto"
+                app:layout_constraintStart_toStartOf="@+id/regFarmFoto"
+                app:layout_constraintTop_toBottomOf="@+id/regFarmFoto" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/regFarmaciaNombre"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Nombre de Farmacia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_selec_imagen_farmacia">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dirFarmacia"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Direccion de Farmacia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regFarmaciaNombre">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/regFarmaciaCorreo"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Correo Farmacia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dirFarmacia">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/regFarmaciaContraseña"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Contraseña"
+                app:passwordToggleEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regFarmaciaCorreo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/regFarmaciaContraseña2"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Confirmar contraseña"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regFarmaciaContraseña"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/telefonoFarmacia"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Telefono Farmacia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regFarmaciaContraseña2"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cPro"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_elegir_rol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cFarm">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nombrePropietario"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Nombre de Propietario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorSelRol" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/correoPropietario"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:hint="Correo Propietario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombrePropietario">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_elegir_rol"
+                    android:textColor="@color/colorSelRol"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.constraint.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/regFarmProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/btnRegistrarFarmacia"
+            app:layout_constraintStart_toStartOf="@+id/btnRegistrarFarmacia"
+            app:layout_constraintTop_toTopOf="@+id/btnRegistrarFarmacia" />
+
+        <Button
+            android:id="@+id/btnRegistrarFarmacia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/stylebtn"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Registrarse"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cPro" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

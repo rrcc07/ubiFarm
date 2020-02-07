@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mapa_farmacias"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="Mapa Farmacias" />
+        <item
+            android:id="@+id/nav_lista_farmacia"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Lista de Farmacias" />
+        <item
+            android:id="@+id/nav_agregar_sucursal"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Agregar sucursal" />
+        <item
+            android:id="@+id/nav_sugerirFarmacia"
+            android:icon="@drawable/ic_library_add_black_24dp"
+            android:title="Sugerir Farmacia" />
+        <item
+            android:id="@+id/nav_habilitar_correo_farmacias"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Habilitar Correos" />
+        <item
+            android:id="@+id/nav_notificaciones"
+            android:icon="@drawable/ic_assignment_late_black_24dp"
+            android:title="Notificaciones Administradores" />
+    </group>
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_directions_run_black_24dp"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

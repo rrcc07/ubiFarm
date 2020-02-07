@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    tools:context=".menuUsuario.SugerirFarmaciaFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nombrefarmaciaSugerir"
+            android:layout_width="340dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:hint="Nombre de farmacia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_elegir_rol"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/telefonoSugerir"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Telefono de referencia"
+            app:layout_constraintStart_toStartOf="@+id/nombrefarmaciaSugerir"
+            app:layout_constraintTop_toBottomOf="@+id/nombrefarmaciaSugerir"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_elegir_rol"
+                android:inputType="phone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/correoSugerenciaFarmacia"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Correo de la farmacia"
+            app:layout_constraintStart_toStartOf="@+id/telefonoSugerir"
+            app:layout_constraintTop_toBottomOf="@+id/telefonoSugerir">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_elegir_rol"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dreccionSugerencia"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:hint="Direccion de la Farmacia"
+            app:layout_constraintStart_toStartOf="@+id/correoSugerenciaFarmacia"
+            app:layout_constraintTop_toBottomOf="@+id/correoSugerenciaFarmacia">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_elegir_rol"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/regProgressSugerirFarmacia"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/btnSugerirFarmacia"
+            app:layout_constraintStart_toStartOf="@+id/btnSugerirFarmacia"
+            app:layout_constraintTop_toTopOf="@+id/btnSugerirFarmacia" />
+
+        <Button
+            android:id="@+id/btnSugerirFarmacia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_elegir_rol2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Enviar"
+            android:textColor="@drawable/txt_btn_elegir_rol2"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dreccionSugerencia" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

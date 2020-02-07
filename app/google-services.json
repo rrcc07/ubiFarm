@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "926690100578",
+    "firebase_url": "https://ubifarm-1575484046839.firebaseio.com",
+    "project_id": "ubifarm-1575484046839",
+    "storage_bucket": "ubifarm-1575484046839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926690100578:android:a9ca377c623e1d668b183b",
+        "android_client_info": {
+          "package_name": "com.rrcc.ubifarm01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926690100578-inmtsq205tf1b71r497lsnfcou6k882u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rrcc.ubifarm01",
+            "certificate_hash": "fd45855b0f95d1794b36efc839618a27a41349a2"
+          }
+        },
+        {
+          "client_id": "926690100578-icp4967dsoe0mpjucr2rjfkjaelkhd2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9c8eM8PRdDNFqAriBcapLsFndC7cVvMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926690100578-icp4967dsoe0mpjucr2rjfkjaelkhd2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
